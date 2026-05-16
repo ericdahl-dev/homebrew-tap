@@ -5,21 +5,21 @@
 class GitGreen < Formula
   desc "Terminal dashboard for GitHub Actions CI status"
   homepage "https://github.com/ericdahl-dev/git-green"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.1/git-green_0.1.1_darwin_amd64.tar.gz"
-      sha256 "3136cf66405d67f4db5f76244fc586db77cccb9173b24aa2a508ee782674403e"
+      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.2/git-green_0.1.2_darwin_amd64.tar.gz"
+      sha256 "425b8df9644a5a7d9fe239cf3d852f3d77a59959bb15418276bc4e22d4a1b43f"
 
       define_method(:install) do
         bin.install "git-green"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.1/git-green_0.1.1_darwin_arm64.tar.gz"
-      sha256 "d848e0e5e98210c77b02ee5baac4e793644d76501fb16e8081c0caeb5c7c78af"
+      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.2/git-green_0.1.2_darwin_arm64.tar.gz"
+      sha256 "f4b0bb25730c9316f866826b8cb16ebd44e0cb7c8012bc560c95ec55984ca6f6"
 
       define_method(:install) do
         bin.install "git-green"
@@ -29,15 +29,15 @@ class GitGreen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.1/git-green_0.1.1_linux_amd64.tar.gz"
-      sha256 "2ac4fdbbaecbdaa59c7f23847878e28af5ed445fe459f011209aaac367d0e8e4"
+      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.2/git-green_0.1.2_linux_amd64.tar.gz"
+      sha256 "65baced7a2e735655a5ea829d2ca250a3f8854a63fad3aaa00c7c31b7c4e92e8"
       define_method(:install) do
         bin.install "git-green"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.1/git-green_0.1.1_linux_arm64.tar.gz"
-      sha256 "f9f80a66c6ecc3b1ce01513e847e02d92b6475c44c51ccbeb063e6c4075ebe84"
+      url "https://github.com/ericdahl-dev/git-green/releases/download/v0.1.2/git-green_0.1.2_linux_arm64.tar.gz"
+      sha256 "2a22ddb84bedb5b43b2524729e2ad031af6b8b872dac5510e90a883da4906fb3"
       define_method(:install) do
         bin.install "git-green"
       end
