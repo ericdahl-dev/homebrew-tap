@@ -5,21 +5,21 @@
 class RepoCleanupTui < Formula
   desc "TUI to find reclaimable node_modules in local git repos"
   homepage "https://github.com/ericdahl-dev/repo-cleanup-tui"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.4/repo-cleanup-tui_0.1.4_darwin_amd64.tar.gz"
-      sha256 "81e10c34f0dcab3bf0dff77c0d14ec2b853f0e87e22538cc04940ae5a53012d6"
+      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.5/repo-cleanup-tui_0.1.5_darwin_amd64.tar.gz"
+      sha256 "50da2979b83cffb35474840aa4dec587363d99946b79607fa2f72390969fb37b"
 
       define_method(:install) do
         bin.install "repo-cleanup-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.4/repo-cleanup-tui_0.1.4_darwin_arm64.tar.gz"
-      sha256 "1c05a864568c5ec3ed6eda4de18de2afe2d661ca840a3fd1108579153b7407e8"
+      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.5/repo-cleanup-tui_0.1.5_darwin_arm64.tar.gz"
+      sha256 "d82abf34ed367efc7939ceabd6b4a255e04df5fcc82370aca27a2c5f33161df6"
 
       define_method(:install) do
         bin.install "repo-cleanup-tui"
@@ -29,15 +29,15 @@ class RepoCleanupTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.4/repo-cleanup-tui_0.1.4_linux_amd64.tar.gz"
-      sha256 "81d69c12981f0cb8b2211ca443e1b428cdf636162dead93e2c88d6656844e5ec"
+      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.5/repo-cleanup-tui_0.1.5_linux_amd64.tar.gz"
+      sha256 "08fb24d0281e69710a173a3cffe1fbb4fc02bfeae2d7082429e4213f6e0941d8"
       define_method(:install) do
         bin.install "repo-cleanup-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.4/repo-cleanup-tui_0.1.4_linux_arm64.tar.gz"
-      sha256 "01e17ea90127d21073fc03609bf45d42f89ccd3a62075bd1f0d46a20f780bbb9"
+      url "https://github.com/ericdahl-dev/repo-cleanup-tui/releases/download/v0.1.5/repo-cleanup-tui_0.1.5_linux_arm64.tar.gz"
+      sha256 "a1aadd8a8ec5e0e6bc941d7833b8bf28ce3ee5e9fe5b33be249091747ffc0d12"
       define_method(:install) do
         bin.install "repo-cleanup-tui"
       end
