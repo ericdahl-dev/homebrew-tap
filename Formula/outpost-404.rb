@@ -5,21 +5,21 @@
 class Outpost404 < Formula
   desc "Terminal base builder on a remote survival colony"
   homepage "https://github.com/ericdahl-dev/outpost-404"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.1.0/outpost-404_0.1.0_darwin_amd64.tar.gz"
-      sha256 "29823b06bb151b87a4dbea0321d50d51b0d5a75e7900ed838114a691a89d0bd2"
+      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.2.0/outpost-404_0.2.0_darwin_amd64.tar.gz"
+      sha256 "541fcfd44b13696a77aeb143d2bcf7b878b052d9fb2ea0cd9c0321f75bf6251c"
 
       define_method(:install) do
         bin.install "outpost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.1.0/outpost-404_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5ff994a468f3a5d65cc44013a972a20ea5827c3d15bad6b646c286aabfa315b7"
+      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.2.0/outpost-404_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a212ac412f518c442a11f34a29df54c2a2c342527f861fc1243498af7c830fc3"
 
       define_method(:install) do
         bin.install "outpost"
@@ -29,15 +29,15 @@ class Outpost404 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.1.0/outpost-404_0.1.0_linux_amd64.tar.gz"
-      sha256 "47afc4288c6024950e28b03570ebdc8718509142ab0d518eb1d37f6d70702ee1"
+      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.2.0/outpost-404_0.2.0_linux_amd64.tar.gz"
+      sha256 "a096175fe271d808bd0a4d355949a3b3f8b73c9c1c220d7a925e81e2b0d5d4a1"
       define_method(:install) do
         bin.install "outpost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.1.0/outpost-404_0.1.0_linux_arm64.tar.gz"
-      sha256 "8de3e3d5a8fa83b298845d32621fdc8e32ba0eb70f4d547d140d262eb3def2c3"
+      url "https://github.com/ericdahl-dev/outpost-404/releases/download/v0.2.0/outpost-404_0.2.0_linux_arm64.tar.gz"
+      sha256 "272353f27eaa8697da7e824d0a827200f80d4e713cc7f0604ef2ed935e07f629"
       define_method(:install) do
         bin.install "outpost"
       end
