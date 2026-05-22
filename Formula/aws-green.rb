@@ -5,21 +5,21 @@
 class AwsGreen < Formula
   desc "Terminal dashboard for live AWS resource health (CodePipeline, CloudFormation, ECS)"
   homepage "https://github.com/ericdahl-dev/aws-green"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.1.0/aws-green_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a039f66566664673f6df903b17be0a5a577ea5bf8d45ade7e508e8f4678212d7"
+      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.2.0/aws-green_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ee8ea131d5c0d2e4ddbc0542b60a0c61e8b5d2e721d0f660e990f56dbdd6b4b5"
 
       define_method(:install) do
         bin.install "aws-green"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.1.0/aws-green_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5e1823a4d739d2dabde0a7f77e527bb62566ac6d52f52d95fd605a95a31fc847"
+      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.2.0/aws-green_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f9e241fc302cababda7282a9c1ab494b6790c4faef87472920396a1dae898b2d"
 
       define_method(:install) do
         bin.install "aws-green"
@@ -29,15 +29,15 @@ class AwsGreen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.1.0/aws-green_0.1.0_linux_amd64.tar.gz"
-      sha256 "a9bb8778c617ea77e96cfd3c82174a89a931ee754e3e0376cf0e8b8d815ff9df"
+      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.2.0/aws-green_0.2.0_linux_amd64.tar.gz"
+      sha256 "7151130abb30bea58e1a8858fdbb7048d135bba427583583ed79e913a7e90f90"
       define_method(:install) do
         bin.install "aws-green"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.1.0/aws-green_0.1.0_linux_arm64.tar.gz"
-      sha256 "898ed8c40dda8339321caf2974e1313909a19ad99e72a925acedbf79c86de971"
+      url "https://github.com/ericdahl-dev/aws-green/releases/download/v0.2.0/aws-green_0.2.0_linux_arm64.tar.gz"
+      sha256 "2fe42d61ed61522493f95a7ca809481aff11d16e3fbd51e81ae81032584764c1"
       define_method(:install) do
         bin.install "aws-green"
       end
